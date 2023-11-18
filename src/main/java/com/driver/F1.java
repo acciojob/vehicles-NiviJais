@@ -7,6 +7,15 @@ public class F1 extends Car {
         super(name, 4, 2, 6, !isManual, "Formula 1", 1);
     }
 
+    public boolean isManual() {
+        // The F1 class inherits isManual from Car, but you might need to override it if necessary
+        return super.isManual();
+    }
+
+    public int getCurrentGear() {
+        return super.getCurrentGear();
+    }
+
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
         /**
