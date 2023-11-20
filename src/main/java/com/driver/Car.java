@@ -35,12 +35,24 @@ public class Car extends Vehicle {
         return doors;
     }
 
+    public void setDoors(int doors){
+        this.doors = doors;
+    }
+
     public int getGears() {
         return gears;
     }
 
+    public void setGears(int gears){
+        this.gears = gears;
+    }
+
     public int getWheels() {
         return wheels;
+    }
+
+    public void setWheels(int wheels){
+        this.wheels = wheels;
     }
 
     public boolean isManual() {
@@ -51,11 +63,23 @@ public class Car extends Vehicle {
         return type;
     }
 
+    public void setType(String type){
+        this.type = type;
+    }
+
     public int getSeats() {
         return seats;
     }
 
+    public void setSeats(int seats){
+        this.seats = seats;
+    }
+
     public int getCurrentGear() {
         return currentGear;
+    }
+
+    public void setCurrentGear(int currentGear){
+        this.currentGear = currentGear;
     }
 }
