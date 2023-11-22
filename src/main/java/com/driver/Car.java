@@ -27,8 +27,17 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-        move(newSpeed, newDirection);
+        move(newSpeed,newDirection); //Parent class function
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
+    }
+
+
+    public int getWheels() {
+        return wheels;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public int getDoors() {
@@ -39,28 +48,15 @@ public class Car extends Vehicle {
         return gears;
     }
 
-    public int getWheels() {
-        return wheels;
-    }
-
     public boolean isManual() {
         return isManual;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-
-    public int getSeats() {
-        return seats;
     }
 
     public int getCurrentGear() {
         return currentGear;
     }
 
-    public void setCurrentGear(int currentGear){
-        this.currentGear = currentGear;
+    public int getSeats() {
+        return seats;
     }
 }
